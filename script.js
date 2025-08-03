@@ -58,3 +58,21 @@ document.addEventListener('DOMContentLoaded', () => {
       });
   }
 });
+
+// --- DEFINITIVE SOLUTION FOR VIDEO SOUND ---
+const video = document.querySelector('.tribute-video');
+if (video) {
+  // This function will run ONLY the first time the video plays.
+  const enableAudioOnFirstPlay = () => {
+    video.muted = false;
+    // After enabling the audio, we remove this listener
+    // so it doesn't run again.
+    video.removeEventListener('play', enableAudioOnFirstPlay);
+  };
+
+  // Listen for the 'play' event. This happens when the user
+  // clicks the play button on the video's controls.
+  video.addEventListener('play', enableAudioOnFirstPlay);
+}
+
+
