@@ -41,7 +41,7 @@ body {
 .background-image-layer {
   position: fixed;
   inset: 0;
-  background-image: url('./Reel/Screenshot\ 2025-07-21\ 224653.png');
+  background-image: url('./Reel/Screenshot\ 2025-07-21\ 224653_Nero_AI_Image_Upscaler_Photo_Face.png');
   background-size: cover;
   background-position: center;
   z-index: -4;
@@ -272,3 +272,4 @@ body {
   margin: 0 auto;
   line-height: 1.6;
 }
+
